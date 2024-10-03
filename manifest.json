@@ -9,12 +9,12 @@
         {
             "src": "Logo.png",
             "type": "image/png",
-            "sizes": "225x225"
+            "sizes": "192x192"
         },
         {
             "src": "Logo.png",
             "type": "image/png",
-            "sizes": "225x225",
+            "sizes": "512x512",
             "purpose": "maskable"
         }
     ]
