@@ -1,7 +1,7 @@
 {
     "name": "Muhammad Hafiz",
     "short_name": "Hafzz",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display":"standalone",
     "background_color": "#778899",
     "theme_color": "#000000",

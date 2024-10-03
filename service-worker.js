@@ -8,50 +8,53 @@ const cache_assets = [
     './Tugas1.css'
 ];
 
+// Install event
 self.addEventListener('install', (event) => {
     console.log('Service Worker: Installed');
     event.waitUntil(
         caches.open(cache_name).then(
             (cache) => {
                 console.log('Service Worker: Caching Files');
-                cache_assets.addAll(cache_assets);
+                return cache.addAll(cache_assets);  // Tambahkan "return" untuk memastikan proses selesai
             }
         )
-    )
-})
+    );
+});
 
+// Activate event
 self.addEventListener('activate', (event) => {
     console.log('Service Worker: Activated');
     event.waitUntil(
         caches.keys().then(
-            (cache_name) => {
+            (cacheNames) => {
                 return Promise.all(
-                    cache_name.map(
+                    cacheNames.map(
                         (cache) => {
-                            if(cache !== cache_name){
+                            if (cache !== cache_name) {
                                 console.log('Service Worker: Clearing Old Cache');
                                 return caches.delete(cache);
                             }
                         }
                     )
-                )
+                );
             }
         )
-    )
-})
+    );
+});
 
+// Fetch event
 self.addEventListener('fetch', (event) => {
     console.log('Service Worker: Fetching');
-    event.RespondWith(
+    event.respondWith(
         caches.match(event.request).then(
             (response) => {
-                if(response){
+                if (response) {
                     return response;
                 }
                 return fetch(event.request).catch(
                     () => caches.match('offline.html')
-                )
+                );
             }
         )
-    )
-})
+    );
+});
