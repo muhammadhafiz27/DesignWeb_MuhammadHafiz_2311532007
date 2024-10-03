@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#778899">
+    <meta name="theme-color" content="#000000">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="Tugas1.css" />
+    <link rel="manifest" href="/manifest.json"  />
+    <script src="./apps.js"></script>
+</head>
+<body>
+    <!-- NAVIGATION BAR-->
+    <div class="navbar">
+        <ul>
+            <li>
+                <a href="index.html" class="a-navbar">HOME</a>
+            </li>
+            <li>
+                <a href="about.html" class="a-navbar">ABOUT</a>
+            </li>
+            <li>
+                <a href="contact.html" class="a-navbar">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+    <!-- CONTENT -->
+    <div class="content-contact">
+        <form>
+            <label for="Nama">Nama :</label><br>
+            <input type="text" id="nama" name="nama" value=""><br><br>
+            <label for="Email">Email :</label><br>
+            <input type="text" id="email" name="email" value=""><br><br>
+            <label for="Kategori">Kategori Pesan :</label>
+            <select name="kategori" id="kategori">
+              <option value="pertanyaan">Pertanyaan</option>
+              <option value="saran">Saran</option>
+              <option value="masalah">Masalah</option>
+            </select><br><br>
+            <label for="Pesan">Pesan :</label>
+            <textarea name="pesan" rows="10" cols="50" class="content-contact-a"></textarea><br><br>
+            <input type="radio">
+            <label for="radio">Apakah anda yakin ingin mengirim pesan?</label><br><br>
+            <input type="submit" onclick="alert('Pesan Anda Berhasil Terkirim');" value="Submit">
+        </form>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer-contact">
+        <a href="https://www.instagram.com/hafizz.mhd__/?utm_source=ig_web_button_share_sheet"><img src="LogoInstragam.jpeg" width="40%" height="40%"/></a> 
+        <a href="https://discord.gg/sK5v9zWF"><img src="LogoDiscord.jpeg" width="40%" height="40%"/></a>
+    </div>
+</body>
+</html>
