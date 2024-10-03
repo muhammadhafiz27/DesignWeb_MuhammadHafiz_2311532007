@@ -40,20 +40,21 @@ li :hover {
 
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    height: 70vh;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 20vh;
 }
 
 .img1 {
-    height: 30%;
+    height: 50%;
     width: 30%;
 }
 
@@ -73,6 +74,7 @@ li :hover {
     display: grid;
     justify-content: center;
     align-items: center;
+    height: 70vh;
 }
 
 .content-contact-a {
@@ -85,7 +87,6 @@ li :hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin : 500px;
-    height: 15vh;
+    height: 20vh;
 }
 
