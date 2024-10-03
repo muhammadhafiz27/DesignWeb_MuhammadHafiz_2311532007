@@ -7,14 +7,14 @@
     "theme_color": "#000000",
     "icons": [
         {
-            "src": "LogoUnandPTNBH-1.png",
+            "src": "Logo.png",
             "type": "image/png",
-            "sizes": "192x192"
+            "sizes": "225x225"
         },
         {
-            "src": "LogoUnandPTNBH-1.png",
+            "src": "Logo.png",
             "type": "image/png",
-            "sizes": "512x512",
+            "sizes": "225x225",
             "purpose": "maskable"
         }
     ]
